@@ -6,7 +6,7 @@ import { aboutFunc } from "./aboutInformation.js";
 
 const divContent = document.querySelector("#content");
 divContent.textContent = "";
-homeFunc();
+menuFunc();
 
 const homeButton = document.querySelector(".homeBtn");
 homeButton.addEventListener("click", () => {
@@ -14,4 +14,10 @@ homeButton.addEventListener("click", () => {
     homeFunc();
 });
 
+
+const menuButton = document.querySelector(".menuBtn");
+menuButton.addEventListener("click", () => {
+    divContent.textContent = "";
+    menuFunc();
+});
 
